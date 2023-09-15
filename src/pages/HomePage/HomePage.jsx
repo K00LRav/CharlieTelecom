@@ -36,7 +36,7 @@ function HomePage() {
 
                       <div className="card-image">
                         <img
-                          src="src/assets/stellan-johansson-1PP0Fc-KSd4-unsplash.jpg"
+                          src="../src/assets/stellan-johansson-1PP0Fc-KSd4-unsplash.jpg"
                           alt=""
                           className="card-img"
                         />
@@ -59,7 +59,7 @@ function HomePage() {
 
                       <div className="card-image">
                         <img
-                          src="src/assets/chuttersnap-MEDHUqvH0tA-unsplash.jpg"
+                          src="../src/assets/chuttersnap-MEDHUqvH0tA-unsplash.jpg"
                           alt=""
                           className="card-img"
                         />
@@ -81,7 +81,7 @@ function HomePage() {
 
                       <div className="card-image">
                         <img
-                          src="src/assets/nelson-ndongala-XaMOJUvli8U-unsplash.jpg"
+                          src="../src/assets/nelson-ndongala-XaMOJUvli8U-unsplash.jpg"
                           alt=""
                           className="card-img"
                         />
