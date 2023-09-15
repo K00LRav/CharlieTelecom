@@ -65,7 +65,7 @@ nav{
         flex-direction: row;
         align-items: flex-start;
         justify-content: flex-start;
-        position: absolute;
+        position: fixed;
         z-index: 2;
         top: 70px;
         right: -300px;
