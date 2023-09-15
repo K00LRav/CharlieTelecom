@@ -81,7 +81,7 @@ function HomePage() {
 
                       <div className="card-image">
                         <img
-                          src="../src/assets/nelson-ndongala-XaMOJUvli8U-unsplash.jpg"
+                          src="https://images.unsplash.com/photo-1551873753-bb5fef0bb410?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTN8fGFudGVubmF8ZW58MHx8MHx8fDI%3D&auto=format&fit=crop&w=900&q=60"
                           alt=""
                           className="card-img"
                         />
