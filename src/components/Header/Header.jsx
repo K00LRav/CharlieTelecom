@@ -41,7 +41,7 @@ class Header extends Component {
             className={this.state.clicked ? "#navbar active" : "#navbar"}
           >
             <li>
-              <Link to="/" id="navlink" className="active">
+              <Link to="/" id="navlink" >
                 Home
               </Link>
             </li>
