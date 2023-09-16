@@ -39,17 +39,17 @@ function Header(){
             className={menuOpen ? "#navbar active" : "#navbar"}
           >
             <li>
-              <Link to="/" id="navlink" >
+              <Link to="/" id="navlink" onClick={()=>{setMenuOpen(!menuOpen)}}>
                 Home
               </Link>
             </li>
             <li>
-              <Link to="/about" id="navlink">
+              <Link to="/about" id="navlink" onClick={()=>{setMenuOpen(!menuOpen)}}>
                 About
               </Link>
             </li>
             <li>
-              <Link to="/contact" id="navlink">
+              <Link to="/contact" id="navlink" onClick={()=>{setMenuOpen(!menuOpen)}}>
                 Contact Us
               </Link>
             </li>
