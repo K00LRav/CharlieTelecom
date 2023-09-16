@@ -1,15 +1,13 @@
 import React from "react";
+import { useState } from "react";
 import { Component } from "react";
 import "./Header.css";
 import { Link } from "react-router-dom";
+import HomePage from '../../pages/HomePage/HomePage';
 
-class Header extends Component {
-  state = { clicked: false };
-  handleClick = () => {
-    this.setState({ clicked: !this.state.clicked });
-  };
+function Header(){
+   const [menuOpen,setMenuOpen] = useState(false);
 
-  render() {
     return (
       <nav>
         <a href="/">
@@ -38,7 +36,7 @@ class Header extends Component {
         <div>
           <ul
             id="navbar"
-            className={this.state.clicked ? "#navbar active" : "#navbar"}
+            className={menuOpen ? "#navbar active" : "#navbar"}
           >
             <li>
               <Link to="/" id="navlink" >
@@ -58,14 +56,14 @@ class Header extends Component {
           </ul>
         </div>
 
-        <div id="mobile" onClick={this.handleClick}>
+        <div id="mobile" onClick={()=>{setMenuOpen(!menuOpen)}}>
           <i
             id="bar"
-            className={this.state.clicked ? "fas fa-times" : "fas fa-bars"}
+            className={menuOpen ? "fas fa-times" : "fas fa-bars"}
           ></i>
         </div>
       </nav>
     );
   }
-}
+
 export default Header;
