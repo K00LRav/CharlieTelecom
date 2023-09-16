@@ -121,6 +121,7 @@
 .mySwiper{
     width: 920px;
     height: 820px;
+    --swiper-theme-color: #F4C440;
 }
 
 @media screen and (max-width:769px){
@@ -159,5 +160,6 @@
         color: #707070;
         text-align: center;
     }
+
 
 }
