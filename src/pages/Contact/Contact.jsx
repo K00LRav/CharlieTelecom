@@ -1,35 +1,41 @@
 import React from "react";
 import { useState } from "react";
 import "./Contact.css";
-
+import { useRef } from 'react';
+import emailjs from '@emailjs/browser';
 function Contact() {
+  
+  const form = useRef();
 
-    const [data, setData] = useState({name:"", email:"", phone:"", message:""})
-    const handleChange = (e) =>{
-          const name = e.target.name;
-          const value = e.target.value;
-          setData({...data, [name]: value})
-          console.log(data)
+  const sendEmail = (e) => {
+    e.preventDefault();
 
-    }
+    emailjs.sendForm('service_ptvy858', 'template_gcduhri', form.current, 'mIGfSiDSk9-tiYNtk')
+      .then((result) => {
+          console.log(result.text);
+      }, (error) => {
+          console.log(error.text);
+      });
+  };
+
+  //reset form, problem right now, it reset form and sends a blank message
+   const resetForm = () => {
+    document.getElementById("myForm").reset();
+  }
     
-    const handleSubmit= (e) =>{
-          e.preventDefault()
-          e.target.reset()
-          alert(data)
-    }
-    
-
-
   return (
     <div className="form-container">
-    <form className="contact-form" method="post" onSubmit={handleSubmit}>
+    <form ref={form} className="contact-form" onSubmit={sendEmail} id="myForm">
       <h1>Contact <span>Here</span></h1>
-      <input type="text" name="name" id="" onChange={handleChange} value={data.name} placeholder="Enter Name"/>
-      <input type="email" name="email" id="" onChange={handleChange} value={data.email} placeholder="example@gmail.com"/>
-      <input type="phone" name="phone" id="" onChange={handleChange} value={data.phone} placeholder="Phone Number"/>
-      <textarea name="message" id="" cols="30" rows="10" onChange={handleChange} value={data.message} placeholder="Type here..."/>
-      <button type="submit" onChange={handleSubmit}>Send</button>
+      <label>Name:</label>
+      <input type="text" name="user_name"/>
+      <label>Email:</label>
+      <input type="email" name="user_email"/>
+      <label>Phone:</label>
+      <input type="tel" name="user_phone" placeholder="123-456-7890" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"/>
+      <label>Message</label>
+      <textarea name="message" cols="30" rows="10"  placeholder="Type here..."/>
+      <button type="submit" value={"Send"}>Send</button>
     </form>
     </div>
   );
