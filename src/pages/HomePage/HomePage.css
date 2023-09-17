@@ -114,8 +114,6 @@
     padding: 30px;
     height: 920px;
     display: flex;
-    flex: 1;
-
 }
 
 .mySwiper{
@@ -124,7 +122,7 @@
     --swiper-theme-color: #F4C440;
 }
 
-@media screen and (max-width:769px){
+@media screen and (max-width:900px){
 
     .slide-container{
     max-width: 1220px;
