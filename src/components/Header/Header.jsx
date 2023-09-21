@@ -31,8 +31,8 @@ function Header(){
               fill="#394149"
             ></path>{" "}
           </svg>
+          <h1 className="site-title">Charlie Telecom</h1>
         </a>
-
         <div>
           <ul
             id="navbar"
@@ -63,6 +63,7 @@ function Header(){
           ></i>
         </div>
       </nav>
+
     );
   }
 
