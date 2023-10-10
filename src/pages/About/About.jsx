@@ -22,7 +22,7 @@ function About() {
                 <div className="card-content-about">
                   <h2 className="title-about">About Us</h2>
                   <p className="description-about">
-                  Providing you with indutry standard Telecommunications services. We are here to install you home video secuity system.
+                  Providing you with indutry standard Telecommunications services. We are here to install your home video secuity system.
                   </p>
 
                   {/* <button className="button">View More</button> */}
