@@ -41,10 +41,10 @@ function HomePage() {
                     </div>
                   </div>
                   <div className="card-content">
-                    <h2 className="title">Welcome To Charlie Telecommunications</h2>
+                    <h2 className="title">Charlie Telecommunications</h2>
                     <p className="description">
                       Where we specialize in CCTV installation,
-                      Network cable installation
+                      Network cable installation.
                     </p>
 
                     {/* <button className="button">View More</button> */}

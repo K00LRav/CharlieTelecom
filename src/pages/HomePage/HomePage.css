@@ -80,6 +80,7 @@
 
 .title{
     font-size: 28px;
+    margin-top: 20px;
     font-weight: 500;
     color: #333;
     font-family: "Poppins";
@@ -90,8 +91,8 @@
     font-size: 24px;
     color: #707070;
     text-align: center;
-    padding-top: 20px;
-    margin: 40px;
+    padding-top: 0px;
+    margin: 30px;
     font-family: "Poppins";
 }
 
