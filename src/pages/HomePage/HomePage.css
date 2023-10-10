@@ -3,23 +3,22 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: #efefef;
+    background-color: #ddd;
 }
 
 .slide-container{
-    max-width: 1220px;
+    max-width: 1620px;
     width: 100%;
     /* background-color: gray;
     padding: 40px 0; */
-    
 }
 
-
 .card{
-    width: 920px;
+    width: 1200px;
     height: 820px;
     border-radius: 25px;
     background-color: #fff;
+    margin-left: 50px;
     /* margin-left: 20%; */
 }
 
@@ -42,7 +41,7 @@
     top: 0;
     height: 100%;
     width: 100%;
-    background-color: #1b2430;
+    background-color: #F4C440;
     border-radius: 25px 25px 0 25px;
 }
 
@@ -54,7 +53,7 @@
     bottom: -40px;
     height: 40px;
     width: 40px;
-    background-color: #1b2430;
+    background-color: #F4C440;
 }
 
 .overlay::after{
@@ -76,13 +75,14 @@
     width: 100%;
     object-fit: cover;
     border-radius: 50%;
-    border: 6px solid #1b2430;
+    border: 6px solid #F4C440;
 }
 
 .title{
     font-size: 28px;
     font-weight: 500;
     color: #333;
+    font-family: "Poppins";
 
 }
 
@@ -92,6 +92,7 @@
     text-align: center;
     padding-top: 20px;
     margin: 40px;
+    font-family: "Poppins";
 }
 
 .button{
@@ -117,7 +118,7 @@
 }
 
 .mySwiper{
-    width: 920px;
+    width: 1450px;
     height: 820px;
     --swiper-theme-color: #F4C440;
 }
@@ -135,16 +136,17 @@
 }
 
     .card{
-        width: 320px;
-        height: 800px;
+        width: 420px;
+        height: 860px;
         border-radius: 25px;
         background-color: #fff;
+        margin-left: 0px;
     }
 
     .mySwiper{
-        margin-top: 7px;
-        width: 320px;
-        height: 800px;
+        margin-top: px;
+        width: 420px;
+        height: 860px;
     }
 
     .title{
@@ -158,6 +160,5 @@
         color: #707070;
         text-align: center;
     }
-
 
 }

@@ -3,7 +3,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: #efefef;
+    background-color: #ddd;
 }
 
 .slide-container-about{
@@ -16,7 +16,7 @@
 
 
 .card-about{
-    width: 920px;
+    width: 1220px;
     height: 820px;
     border-radius: 25px;
     background-color: #fff;
@@ -42,7 +42,7 @@
     top: 0;
     height: 100%;
     width: 100%;
-    background-color: #1b2430;
+    background-color: #F4C440;
     border-radius: 25px 25px 0 25px;
 }
 
@@ -54,7 +54,7 @@
     bottom: -40px;
     height: 40px;
     width: 40px;
-    background-color: #1b2430;
+    background-color: #F4C440;
 }
 
 .overlay-about::after{
@@ -76,14 +76,14 @@
     width: 100%;
     object-fit: cover;
     border-radius: 50%;
-    border: 6px solid #1b2430;
+    border: 6px solid #F4C440;
 }
 
 .title-about{
     font-size: 28px;
     font-weight: 500;
     color: #333;
-
+    font-family: "Poppins";
 }
 
 .description-about{
@@ -97,6 +97,7 @@
 .card-wrapper-about{
     display: flex;
     justify-content: center;
+    font-family: "Poppins";
 }
 
 @media screen and (max-width:900px){
@@ -112,8 +113,8 @@
 }
 
     .card-about{
-        width: 320px;
-        height: 800px;
+        width: 420px;
+        height: auto;
         border-radius: 25px;
         background-color: #fff;
     }

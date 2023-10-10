@@ -32,7 +32,7 @@ function Contact() {
       <label>Email:</label>
       <input type="email" name="user_email"/>
       <label>Phone:</label>
-      <input type="tel" name="user_phone" placeholder="123-456-7890" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"/>
+      <input type="tel" name="user_phone" placeholder="123-456-7890" pattern="[0-9]{3}[0-9]{3}[0-9]{4}"/>
       <label>Message</label>
       <textarea name="message" cols="30" rows="10"  placeholder="Type here..."/>
       <button type="submit" value={"Send"}>Send</button>

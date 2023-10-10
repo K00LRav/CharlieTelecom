@@ -30,10 +30,11 @@ nav{
     list-style: none;
     padding: 0 20px;
     position: relative;
+    font-family: "Poppins";
 }
 
 #navlink{
-    font-size: 1.3rem;
+    font-size: 1.2rem;
     font-weight: 600;
     color: #fff;
     transition: 0.3s ease-in-out;
